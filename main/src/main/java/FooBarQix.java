@@ -1,11 +1,14 @@
 public class FooBarQix {
     public String compute(int i) {
+        String res=String.valueOf(i);
         if(i%3==0){
-            return "foo";
+            res="foo";
         }
         if(i%5==0){
-            return "bar";
+            res="bar";
         }
-        return String.valueOf(i);
+        if(res.contains("7"))
+            res="qix";
+        return res;
     }
 }

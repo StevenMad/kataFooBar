@@ -51,4 +51,14 @@ public class TestFooBarQix {
     public void compute_with10_returnsBar(){
         assertThat(fooBarQiz.compute(10),is("bar"));
     }
+
+    @Test
+    public void compute_with7_returnsQix(){
+        assertThat(fooBarQiz.compute(7),is("qix"));
+    }
+
+    @Test
+    public void compute_with17_returnsQix(){
+        assertThat(fooBarQiz.compute(17),is("qix"));
+    }
 }
