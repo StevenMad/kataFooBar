@@ -3,9 +3,9 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TestFooBarQiz {
+public class TestFooBarQix {
 
-    FooBarQiz fooBarQiz = new FooBarQiz();
+    FooBarQix fooBarQiz = new FooBarQix();
 
     @Test
     public void compute_withOneNumber_returnsNumberAsString(){
