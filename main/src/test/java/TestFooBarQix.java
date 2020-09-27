@@ -41,4 +41,14 @@ public class TestFooBarQix {
     public void compute_withANumberDivisibleBy3_ReturnsFoo(){
         assertThat(fooBarQiz.compute(12),is("foo"));
     }
+
+    @Test
+    public void compute_with5_returnsBar(){
+        assertThat(fooBarQiz.compute(5),is("bar"));
+    }
+
+    @Test
+    public void compute_with10_returnsBar(){
+        assertThat(fooBarQiz.compute(10),is("bar"));
+    }
 }

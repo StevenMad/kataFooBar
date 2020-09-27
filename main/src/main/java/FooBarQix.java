@@ -3,6 +3,9 @@ public class FooBarQix {
         if(i%3==0){
             return "foo";
         }
+        if(i%5==0){
+            return "bar";
+        }
         return String.valueOf(i);
     }
 }
