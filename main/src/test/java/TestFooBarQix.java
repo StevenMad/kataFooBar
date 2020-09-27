@@ -68,8 +68,28 @@ public class TestFooBarQix {
     }
 
     @Test
-    public void compute_with_55_returnsBarBarBar(){
+    public void compute_withANumbercontaining3_returnsAsManyFooAs3IsPresent(){
+        assertThat(fooBarQiz.compute(13),is("foo"));
+    }
+
+    @Test
+    public void compute_with55_returnsBarBarBar(){
         assertThat(fooBarQiz.compute(55),is("barbarbar"));
+    }
+
+    @Test
+    public void compute_with15_returnsFooBarBar(){
+        assertThat(fooBarQiz.compute(15),is("foobarbar"));
+    }
+
+    @Test
+    public void compute_with77_returnsQixQix(){
+        assertThat(fooBarQiz.compute(77),is("qixqix"));
+    }
+
+    @Test
+    public void compute_with27_returnsFooQix(){
+        assertThat(fooBarQiz.compute(27),is("fooqix"));
     }
 
 }
