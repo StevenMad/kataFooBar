@@ -23,8 +23,8 @@ public class TestFooBarQix {
     }
 
     @Test
-    public void compute_withThree_returnsFoo(){
-        assertThat(fooBarQiz.compute(3),is("foo"));
+    public void compute_withThree_returnsFooFoo(){
+        assertThat(fooBarQiz.compute(3),is("foofoo"));
     }
 
     @Test
@@ -60,5 +60,10 @@ public class TestFooBarQix {
     @Test
     public void compute_with17_returnsQix(){
         assertThat(fooBarQiz.compute(17),is("qix"));
+    }
+
+    @Test
+    public void compute_with33_returnsFooFooFoo(){
+        assertThat(fooBarQiz.compute(33),is("foofoofoo"));
     }
 }
