@@ -13,22 +13,22 @@ public class TestFooBarQix {
     }
 
     @Test
-    public void compute_withOne_returnsOneAsString(){
+    public void compute_with1_returnsOneAsString(){
         assertThat(fooBarQiz.compute(1),is("1"));
     }
 
     @Test
-    public void compute_withTwo_returnsTwoAsString(){
+    public void compute_with2_returnsTwoAsString(){
         assertThat(fooBarQiz.compute(2),is("2"));
     }
 
     @Test
-    public void compute_withThree_returnsFooFoo(){
+    public void compute_with3_returnsFooFoo(){
         assertThat(fooBarQiz.compute(3),is("foofoo"));
     }
 
     @Test
-    public void compute_withSix_returnsFoo(){
+    public void compute_with6_returnsFoo(){
         assertThat(fooBarQiz.compute(6),is("foo"));
     }
 
@@ -43,8 +43,8 @@ public class TestFooBarQix {
     }
 
     @Test
-    public void compute_with5_returnsBar(){
-        assertThat(fooBarQiz.compute(5),is("bar"));
+    public void compute_with5_returnsBarBar(){
+        assertThat(fooBarQiz.compute(5),is("barbar"));
     }
 
     @Test
@@ -66,4 +66,10 @@ public class TestFooBarQix {
     public void compute_with33_returnsFooFooFoo(){
         assertThat(fooBarQiz.compute(33),is("foofoofoo"));
     }
+
+    @Test
+    public void compute_with_55_returnsBarBarBar(){
+        assertThat(fooBarQiz.compute(55),is("barbarbar"));
+    }
+
 }
