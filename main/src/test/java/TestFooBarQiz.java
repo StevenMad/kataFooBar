@@ -23,7 +23,22 @@ public class TestFooBarQiz {
     }
 
     @Test
-    public void compute_withThree_returnsThreeAsString(){
-        assertThat(fooBarQiz.compute(3),is("3"));
+    public void compute_withThree_returnsFoo(){
+        assertThat(fooBarQiz.compute(3),is("foo"));
+    }
+
+    @Test
+    public void compute_withSix_returnsFoo(){
+        assertThat(fooBarQiz.compute(6),is("foo"));
+    }
+
+    @Test
+    public void compute_with9_returnsFoo(){
+        assertThat(fooBarQiz.compute(9),is("foo"));
+    }
+
+    @Test
+    public void compute_withANumberDivisibleBy3_ReturnsFoo(){
+        assertThat(fooBarQiz.compute(12),is("foo"));
     }
 }
