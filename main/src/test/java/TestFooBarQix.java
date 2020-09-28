@@ -92,4 +92,14 @@ public class TestFooBarQix {
         assertThat(fooBarQiz.compute(27),is("fooqix"));
     }
 
+    @Test
+    public void compute_with53_returnsBarFoo(){
+        assertThat(fooBarQiz.compute(53),is("barfoo"));
+    }
+
+    @Test
+    public void compute_with7_returnsQixFoo(){
+        assertThat(fooBarQiz.compute(73),is("qixfoo"));
+    }
+
 }
