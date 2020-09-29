@@ -2,6 +2,12 @@
 
 public class FooBarQix {
 
+    public void displayNumbersAndFooBarQix(){
+        for(int i=1;i<=100;i++){
+            System.out.println(compute(i));
+        }
+    }
+
     public String compute(int i) {
         //StringBuilder res= new StringBuilder(String.valueOf(i));
         StringBuilder res=new StringBuilder();
