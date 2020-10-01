@@ -98,7 +98,7 @@ public class TestFooBarQix {
     }
 
     @Test
-    public void compute_with7_returnsQixFoo(){
+    public void compute_with73_returnsQixFoo(){
         assertThat(fooBarQiz.compute(73),is("qixfoo"));
     }
 
